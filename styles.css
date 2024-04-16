@@ -7,8 +7,8 @@ body {
   font-weight: 400;
 }
 
-main{
-  margin:20px;
+main {
+  margin: 20px;
 }
 
 nav {
@@ -25,8 +25,8 @@ nav {
   transition: padding 0.3s ease;
   background-image: url("https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg");
   background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #name {
@@ -48,7 +48,7 @@ nav ul li {
   display: inline-block;
   font-size: 18px;
   text-align: center;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 /* COLOR THEMES ---------------------- */
@@ -144,15 +144,8 @@ footer ul {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   width: 100%;
-}
-
-footer ul li {
-  margin: 20px 10px 20px;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
 }
 
 footer a:link,
@@ -165,11 +158,30 @@ footer a:hover {
   color: #0f6574;
 }
 
-footer ul li img{
+footer ul li img {
   width: 25px;
 }
 
-footer ul li a:hover img{
-  background-color:#0f6574;
+footer ul li a:hover img {
+  background-color: #0f6574;
   border-radius: 50%;
+}
+
+footer ul li {
+  margin: 20px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+footer a img {
+  vertical-align: middle;
+  height: 25px;
+  width: auto;
 }
