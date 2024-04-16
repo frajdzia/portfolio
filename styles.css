@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Suranna:700|Suranna:400');
+
+body {
+  margin: 50px;
+  margin-bottom: 0;
+  font-family: 'Suranna';
+  font-weight: 400;
+}
+
+main{
+  margin:20px;
+}
+
+nav {
+  position: fixed;
+  min-height: 0;
+  display: inline;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  overflow: hidden;
+  float: right;
+  transition: padding 0.3s ease;
+  background-image: url("https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg");
+  background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#name {
+  float: left;
+  margin-left: 25px;
+  position: relative;
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  float: right;
+  justify-content: space-evenly;
+  padding-right: 40px;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  margin-left:10px;
+}
+
+
+
+/* COLOR THEMES ---------------------- */
+
+:root[data-theme="light"] {
+  --text: #021818;
+  --background: #ebfeff;
+  --primary: #24ebe7;
+  --secondary: #9886f4;
+  --accent: #a152ef;
+}
+
+:root[data-theme="dark"] {
+  --text: #e7fdfd;
+  --background: #001314;
+  --primary: #14dbd8;
+  --secondary: #1e0b79;
+  --accent: #5e10ad;
+}
+
+/* FONTS --------------------------- */
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Suranna';
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 4.210rem;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem;
+  /* 12px */
+}
+
+
+/* FOOTER ------------------------------------- */
+
+html,
+body {
+  /* for footer not having margin */
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  background-color: #d8f0f4;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin: 20px 10px 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+footer a:link,
+footer a:visited {
+  color: #6e8892;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0f6574;
+}
