@@ -7,10 +7,6 @@ body {
   font-weight: 400;
 }
 
-main {
-  margin: 20px;
-}
-
 nav {
   position: fixed;
   min-height: 0;
@@ -116,6 +112,19 @@ small {
   /* 12px */
 }
 
+/* HOME PAGE ----------------------------------- */
+
+.parallax {
+  background-image: url("india.JPG");
+
+  /* set a specific height */
+  min-height: 700px;
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;}
 
 /* FOOTER ------------------------------------- */
 
