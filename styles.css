@@ -153,12 +153,19 @@ footer {
 footer ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 10px;
   width: 100%;
+}
+
+.left {
+  box-shadow: .5px 0 0 #000;
+}
+
+.right {
+  box-shadow: -.5px 0 0 #000;
 }
 
 footer a:link,
@@ -174,6 +181,9 @@ footer a:hover {
 footer ul li img {
   width: 25px;
 }
+
+#social_media{
+  display: flex;}
 
 footer ul li a:hover img {
   background-color: #0f6574;
