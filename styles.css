@@ -130,6 +130,77 @@ small {
   }
 }
 
+/* WORK EXPIERIENCE PICTURES ------------------ */
+
+.content_container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: wrap;
+}
+
+.content_container ul {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.content_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content_item {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.content_item img {
+  width: 300px;
+  height: 300px;
+}
+
+.content_middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.content_container ul li:hover .content_item {
+  opacity: 0.7;
+}
+
+.content_container ul li:hover .content_middle {
+  opacity: 1;
+}
+
+.content_text {
+  color: white;
+  font-size: 16px;
+  width: 350px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  
+}
+
+
 
 /* FOOTER ------------------------------------- */
 
