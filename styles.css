@@ -133,7 +133,6 @@ small {
 /* WORK EXPIERIENCE PICTURES ------------------ */
 
 .content_container {
-  width: 100%;
   overflow-x: auto;
   white-space: wrap;
 }
@@ -174,9 +173,10 @@ small {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(29, 140, 199, 0.9);
   padding: 10px;
   transition: opacity 0.5s ease;
+  border-radius: 10px;
 }
 
 .content_container ul li:hover .content_item {
@@ -190,14 +190,13 @@ small {
 .content_text {
   color: white;
   font-size: 16px;
-  width: 350px;
+  width: 200px;
 }
 
 .top-left {
   position: absolute;
-  top: 8px;
-  left: 16px;
-  
+  top: 0px;
+  left: 0px;
 }
 
 
