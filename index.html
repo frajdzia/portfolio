@@ -12,10 +12,10 @@
     <nav>
         <p id="name">Lidia Soltys</p>
         <ul>
-            <li><a href="#home" id="home">Home</a></li>
-            <li><a href="#aboutme" id="aboutme">About me</a></li>
-            <li><a href="#portfolio" id="portfolio">Portfolio</a></li>
-            <li><a href="#projects" id="projects">Projects</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="index.html/#aboutme" id="aboutme">About me</a></li>
+            <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+            <li><a href="index.html/#projects" id="projects">Projects</a></li>
             <li><a href="#contact" id="contact">Contact</a></li>
         </ul>
     </nav>
@@ -65,10 +65,8 @@
             <ul class="content_list">
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background1.svg"
-                            alt="bartender">
-                        <div class="top-left"><img src="/assets/bartender.svg"
-                            alt="bartender"></div>
+                        <img src="/assets/work_experience/background1.svg" alt="bartender">
+                        <div class="top-left"><img src="/assets/work_experience/bartender.svg" alt="bartender"></div>
                         <div class="content_middle">
                             <div class="content_text">
                                 <b>Bartender</b><br>
@@ -79,26 +77,22 @@
                 </li>
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background2.svg"
-                            alt="waitress">
-                        <div class="top-left"><img src="/assets/waitress.svg"
-                            alt="waitress"></div>
+                        <img src="/assets/work_experience/background2.svg" alt="waitress">
+                        <div class="top-left"><img src="/assets/work_experience/waitress.svg" alt="waitress"></div>
                         <div class="content_middle">
                             <div class="content_text">
                                 <b>Waitress</b><br>
                                 Since XII 2023
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </li>
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background3.svg"
-                            alt="telephoneadvisor">
-                        <div class="top-left"><img src="/assets/teladvisor.svg"
-                            alt="telephoneadvisor"></div>
+                        <img src="/assets/work_experience/background3.svg" alt="telephoneadvisor">
+                        <div class="top-left"><img src="/assets/work_experience/teladvisor.svg" alt="telephoneadvisor"></div>
                         <div class="content_middle">
-                            <div class="content_text"> 
+                            <div class="content_text">
                                 <b>Telephone Customer Advisor</b><br>
                                 VII - IX 2023
                             </div>
@@ -107,10 +101,8 @@
                 </li>
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background4.svg"
-                            alt="privatetutor">
-                        <div class="top-left"><img src="/assets/privatetutor.svg"
-                            alt="privatetutor"></div>
+                        <img src="/assets/work_experience/background4.svg" alt="privatetutor">
+                        <div class="top-left"><img src="/assets/work_experience/privatetutor.svg" alt="privatetutor"></div>
                         <div class="content_middle">
                             <div class="content_text">
                                 <b>Private Tutor in mathematics, physics and IT</b><br>
@@ -121,10 +113,8 @@
                 </li>
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background5.svg"
-                            alt="intern">
-                        <div class="top-left"><img src="/assets/intern.svg"
-                            alt="intern"></div>
+                        <img src="/assets/work_experience/background5.svg" alt="intern">
+                        <div class="top-left"><img src="/assets/work_experience/intern.svg" alt="intern"></div>
                         <div class="content_middle">
                             <div class="content_text">
                                 <b>Marketing Intern</b><br>
@@ -135,10 +125,8 @@
                 </li>
                 <li>
                     <div class="content_item">
-                        <img src="/assets/background6.svg"
-                            alt="photographer">
-                        <div class="top-left"><img src="/assets/photographer.svg"
-                            alt="photographer"></div>
+                        <img src="/assets/work_experience/background6.svg" alt="photographer">
+                        <div class="top-left"><img src="/assets/work_experience/photographer.svg" alt="photographer"></div>
                         <div class="content_middle">
                             <div class="content_text">
                                 <b>Photography Passionate</b><br>
@@ -173,6 +161,22 @@
             <li>Aliquam tincidunt mauris eu risus.</li>
         </ul>
 
+<div class="gallery">
+        <div id="thumbBar"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        loadImages("london", 24);
+    });
+        </script>
+</div>
+
+<div class="gallery">
+    <div id="thumbBar"></div>
+    <script>
+        
+    loadImages("cambridge", 20);
+    </script>
+</div>
 
     </main>
 
@@ -185,20 +189,20 @@
             </div>
             <div>
                 <li>Useful links:</li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./aboutme.html">About me</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html/#aboutme">About me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </div>
             <div>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="index.html/#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
             <div class="right">
                 <li>Social media:</li>
                 <div id="social_media">
-                    <li><a href="#" id="email"><img src="email.png" alt="Email"></a></li>
-                    <li><a href="#" id="github"><img src="github.png" alt="GitHub"></a></li>
-                    <li><a href="#" id="linkedin"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="#" id="email"><img src="email.png" alt="Email" target="_blank"></a></li>
+                    <li><a href="https://github.com/frajdzia" id="github" target="_blank"><img src="github.png" alt="GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lidiasoltys/" id="linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a></li>
                 </div>
             </div>
         </ul>
