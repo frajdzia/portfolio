@@ -223,16 +223,30 @@ p {
   background-color: white;
   color: #72aaef;
   border: 2px solid #72aaef;
-  padding: 10px 20px;
+  margin-right:20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  float:none;
 }
-
 .fullbtn img{
   width:auto;
   height:50px;
+  display: block;
 }
+
+.fullbtn a:link img ,
+.fullbtn img a:visited
+{
+ opacity:1;
+ transition: opacity 0.5s ease;}
+
+.fullbtn a:hover img 
+{
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+
 
 .fullbtn a:hover,
 .fullbtn a:active {
