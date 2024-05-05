@@ -220,6 +220,10 @@ p {
 }
 
 /* BUTTON ----------------- */
+.fullbtn{
+  cursor: pointer;
+}
+
 .fullbtn a:link,
 .fullbtn a:visited {
   background-color: white;
