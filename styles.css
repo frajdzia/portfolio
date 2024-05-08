@@ -283,11 +283,10 @@ form {
   flex: 1; /* Make the picture container flexible */
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .piconside img {
-  max-width: 70%; /* Ensure the image doesn't exceed its container */
+  max-width: 50%; /* Ensure the image doesn't exceed its container */
   height: auto;
 }
 
