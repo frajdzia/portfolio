@@ -266,6 +266,30 @@ p {
 }
 
 /* CONTACT FORM ------------------------------------ */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 20px; /* Add some space at the top */
+}
+
+form {
+  flex: 1; /* Make the form flexible */
+  max-width: 400px; /* Limit the form's width */
+  margin-right: 5px;
+}
+
+.piconside {
+  flex: 1; /* Make the picture container flexible */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.piconside img {
+  max-width: 70%; /* Ensure the image doesn't exceed its container */
+  height: auto;
+}
 
 textarea {
   display: inline-block;
@@ -277,7 +301,12 @@ textarea {
   border: none;
 }
 fieldset {
-  border: none;
+  /* border: none; */
+  align-items: left;
+    text-align: left;
+    position: relative;
+    max-width: 400px;
+    margin: 10px;
 }
 
 #cname,#cemail {
@@ -303,8 +332,6 @@ fieldset {
   border: none;
   cursor: pointer;
 }
-
-
 
 /* FOOTER ------------------------------------- */
 
