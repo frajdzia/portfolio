@@ -220,7 +220,7 @@ p {
 }
 
 /* BUTTON ----------------- */
-.fullbtn{
+.fullbtn {
   cursor: pointer;
 }
 
@@ -232,22 +232,22 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  float:none;
+  float: none;
 }
-.fullbtn img{
-  width:auto;
-  height:200px;
+
+.fullbtn img {
+  width: auto;
+  height: 200px;
   display: block;
 }
 
-.fullbtn a:link img ,
-.fullbtn img a:visited
-{
- opacity:1;
- transition: opacity 0.5s ease;}
+.fullbtn a:link img,
+.fullbtn img a:visited {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 
-.fullbtn a:hover img 
-{
+.fullbtn a:hover img {
   opacity: 0.7;
   transition: opacity 0.5s ease;
 }
@@ -265,25 +265,42 @@ p {
   height: auto;
 }
 
+/* PORTFOLIO PAGE ------------------------------------*/
+
+#portfolio_name {
+  text-align: center;
+}
+
+
 /* CONTACT FORM ------------------------------------ */
+
 .contact-container {
   display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 form {
-  flex: 1; /* Make the form flexible */
-  max-width: 400px; /* Limit the form's width */
+  flex: 1;
+  border: none;
+  align-items: left;
+  text-align: left;
+  position: relative;
+  max-width: 300px;
+  margin-left: 50px;
   margin-right: 5px;
 }
 
+fieldset{
+  border:none;
+}
+
 .piconside {
-  flex: 1; /* Make the picture container flexible */
-  display: flex;
-  justify-content: flex-end;
+  flex: 1;
 }
 
 .piconside img {
-  max-width: 50%; /* Ensure the image doesn't exceed its container */
+  max-width: 50%;
   height: auto;
 }
 
@@ -292,25 +309,18 @@ textarea {
   border-radius: 5px;
   background-color: #daebf0;
   width: 250px;
-  padding:10px;
-  height: 65px;
+  padding: 10px;
+  height: 80px;
   border: none;
 }
-fieldset {
-  /* border: none; */
-  align-items: left;
-    text-align: left;
-    position: relative;
-    max-width: 400px;
-    margin: 10px;
-}
 
-#cname,#cemail {
+#cname,
+#cemail {
   background-color: #daebf0;
   border-radius: 5px;
   width: 250px;
 
-  padding:10px;
+  padding: 10px;
   margin-top: 5px;
   border: none;
 }
@@ -321,7 +331,7 @@ fieldset {
   margin-bottom: 20px;
 }
 
-.buttons{
+.buttons {
   margin-top: 10px;
   padding: 8px;
   border-radius: 5px;
