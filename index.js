@@ -2,6 +2,15 @@
 //     const currentTheme = document.body.getAttribute('data-theme');
 //     document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
 // });
+window.addEventListener('scroll', function () {
+    var parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(function (element) {
+        var scrolled = window.scrollY;
+        var rate = element.getAttribute('data-rate') || 0.5; // Default rate is 0.5
+        element.style.backgroundPositionY = -(scrolled * rate) + 'px';
+    });
+});
+
 
 function loadImages(type, count) {
     // Clear existing images
