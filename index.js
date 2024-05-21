@@ -6,10 +6,17 @@ window.addEventListener('scroll', function () {
     var parallaxElements = document.querySelectorAll('.parallax');
     parallaxElements.forEach(function (element) {
         var scrolled = window.scrollY;
-        var rate = element.getAttribute('data-rate') || 0.5; // Default rate is 0.5
-        element.style.backgroundPositionY = -(scrolled * rate) + 'px';
+        var rate = parseFloat(element.getAttribute('data-rate')) || 0.5; // Default rate is 0.5
+        var isBackgroundImage = getComputedStyle(element).backgroundImage !== 'none';
+        
+        if (isBackgroundImage) {
+            element.style.backgroundPositionY = -(scrolled * rate) + 'px';
+        } else {
+            element.style.transform = 'translateY(' + -(scrolled * rate) + 'px)';
+        }
     });
 });
+
 
 
 function loadImages(type, count) {
