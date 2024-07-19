@@ -148,6 +148,11 @@ p {
 
 }
 
+.profile{
+  text-align: center;
+  color: black;
+}
+
 /* WORK EXPIERIENCE PICTURES ------------------ */
 
 .content_container {
