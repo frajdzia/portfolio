@@ -138,13 +138,13 @@ p {
 
 .welcome {
   position: relative;
-  color: white;
 }
 
 .welcometext {
   position: absolute;
   top: 50px;
   left: 20px;
+  color: white;
 
 }
 
@@ -351,6 +351,17 @@ textarea {
   cursor: pointer;
 }
 
+.contact_icons li{
+  display: flex;
+  align-items: center;
+  margin:5px;
+}
+
+.contact_icons li img {
+  width:30px;
+  margin-right:10px;
+}
+
 /* FOOTER ------------------------------------- */
 
 html,
@@ -394,10 +405,6 @@ footer a:visited {
   text-decoration: none;
 }
 
-footer a:hover {
-  color: #0f6574;
-}
-
 footer ul li img {
   width: 25px;
 }
@@ -406,7 +413,7 @@ footer ul li img {
   display: flex;
 }
 
-footer ul li a:hover img {
+footer ul li a:hover img, .contact_icons a:hover img{
   background-color: #0f6574;
   border-radius: 50%;
 }
@@ -417,11 +424,6 @@ footer ul li {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-}
-
-footer a {
-  display: flex;
-  align-items: center;
 }
 
 footer a img {
