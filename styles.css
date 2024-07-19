@@ -48,6 +48,16 @@ nav ul li {
   margin-left: 10px;
 }
 
+nav ul li a{
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+nav ul li a:hover{
+  color:#1e0b79;
+}
+
 /* COLOR THEMES ---------------------- */
 
 :root[data-theme="light"] {
