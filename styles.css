@@ -6,6 +6,7 @@ body {
   margin-bottom: 0;
   font-family: 'Roboto';
   font-weight: 400;
+  background-color: #edfcff;
 }
 
 nav {
@@ -24,6 +25,8 @@ nav {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 #name {
@@ -154,10 +157,15 @@ p {
   position: absolute;
   top: 50px;
   left: 20px;
-  color: white;
+  color: black;
 
 }
-
+.welcometext p {
+  top: 50px;
+  left: 20px;
+  color: black;
+  margin-right: 80px;
+}
 .profile{
   text-align: center;
   color: black;
@@ -382,7 +390,7 @@ body {
 }
 
 footer {
-  background-color: #d8f0f4;
+  background-color: #d3f8ff;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -424,7 +432,7 @@ footer ul li img {
 }
 
 footer ul li a:hover img, .contact_icons a:hover img{
-  background-color: #0f6574;
+  background-color: #8edbec;
   border-radius: 50%;
 }
 
@@ -444,7 +452,7 @@ footer a img {
 
 footer p {
   margin: 0;
-  background-color: #b1e0ea;
+  background-color: #a9e3f0;
 }
 
 footer div {
