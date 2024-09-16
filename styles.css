@@ -51,15 +51,17 @@ nav ul li {
   margin-left: 10px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 20px;
 }
 
-nav ul li a:hover{
-  color:#1e0b79;
+nav ul li a:hover {
+  color: #1e0b79;
 }
+
+
 
 /* COLOR THEMES ---------------------- */
 
@@ -156,17 +158,17 @@ p {
 .welcometext {
   position: absolute;
   top: 50px;
-  left: 20px;
+  left: 50px;
   color: black;
+  box-shadow: 0px 0px 15px rgba(93, 0, 255, 0.5);
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 30px auto;
+}
 
-}
-.welcometext p {
-  top: 50px;
-  left: 20px;
-  color: black;
-  margin-right: 80px;
-}
-.profile{
+.profile {
   text-align: center;
   color: black;
 }
@@ -297,8 +299,8 @@ p {
 
 /* PROJECTS PAGE --------------------------------*/
 
-.text_containter{
-  margin:50px;
+.text_containter {
+  margin: 50px;
 }
 
 
@@ -306,8 +308,10 @@ p {
 
 .contact-container {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
 }
 
 form {
@@ -321,8 +325,8 @@ form {
   margin-right: 5px;
 }
 
-fieldset{
-  border:none;
+fieldset {
+  border: none;
 }
 
 .piconside {
@@ -369,15 +373,15 @@ textarea {
   cursor: pointer;
 }
 
-.contact_icons li{
+.contact_icons li {
   display: flex;
   align-items: center;
-  margin:5px;
+  margin: 5px;
 }
 
 .contact_icons li img {
-  width:30px;
-  margin-right:10px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 /* FOOTER ------------------------------------- */
@@ -431,7 +435,8 @@ footer ul li img {
   display: flex;
 }
 
-footer ul li a:hover img, .contact_icons a:hover img{
+footer ul li a:hover img,
+.contact_icons a:hover img {
   background-color: #8edbec;
   border-radius: 50%;
 }
