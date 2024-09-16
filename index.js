@@ -36,6 +36,12 @@ function loadImages(type, count) {
     else if (type === "london") {
         filenamePattern = "london/london ";
     }
+    else if (type === "spain") {
+        filenamePattern = "spain/spain ";
+    }
+    else if (type === "poland") {
+        filenamePattern = "poland/poland ";
+    }
     else {
         console.error("Invalid type specified");
         return;
