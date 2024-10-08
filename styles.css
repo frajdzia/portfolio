@@ -22,9 +22,6 @@ nav {
   float: right;
   transition: padding 0.3s ease;
   background-image: linear-gradient(to bottom right, rgb(104, 170, 255), rgb(234, 129, 255));
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }

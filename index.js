@@ -17,8 +17,6 @@ window.addEventListener('scroll', function () {
     });
 });
 
-
-
 function loadImages(type, count) {
     // Clear existing images
     thumbBar.innerHTML = '';
