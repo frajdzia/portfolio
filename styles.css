@@ -145,7 +145,32 @@ p {
   background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  header {
+      flex-direction: column;
+      box-shadow: none;
+      padding: 0px;
+  }
+
+  nav {
+      display: flex;
+      width: 100%;    
+  }
+  
+  nav a {
+      flex-basis: 50%;
+      text-align: center;
+      border-bottom: 3px solid rgba(194, 194, 194, 0.9);
+      margin-left: 0px;   
+  }
+
+  nav a:hover {
+      border-bottom: 3px solid rgb(0,100,245);
+      border-top: 3px solid rgba(30,100,245,0);
+  }
+
   .parallax {
     background-attachment: scroll;
   }
