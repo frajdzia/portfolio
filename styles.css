@@ -21,7 +21,7 @@ nav {
   overflow: hidden;
   float: right;
   transition: padding 0.3s ease;
-  background-image: url("https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg");
+  background-image: linear-gradient(to bottom right, rgb(104, 170, 255), rgb(234, 129, 255));
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
