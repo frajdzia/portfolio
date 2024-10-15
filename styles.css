@@ -293,7 +293,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* BUTTON ----------------- */
+/* BUTTONS ----------------- */
 #get_in_touch a:link,
 #get_in_touch a:visited {
   padding: 10px 20px;
@@ -341,6 +341,17 @@ p {
   height: auto;
 }
 
+.projectbuttons button{
+  transition-duration: 0.5s;
+  background-color: white;
+  color: black;
+  border: 2px solid #cdacff; /* Green */
+}
+
+.projectbuttons button:hover{
+  background-color: #cdacff; /* Green */
+  color: white;
+}
 /* PORTFOLIO PAGE ------------------------------------*/
 
 #portfolio_name {
