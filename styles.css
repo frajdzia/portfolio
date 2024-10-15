@@ -30,7 +30,7 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#name {
+#navname {
   float: left;
   margin-left: 25px;
   position: relative;
@@ -369,57 +369,7 @@ form {
   align-items: left;
   text-align: left;
   position: relative;
-  max-width: 300px;
-  margin-left: 50px;
-  margin-right: 5px;
-}
-
-fieldset {
-  border: none;
-}
-
-.piconside {
-  flex: 1;
-}
-
-.piconside img {
-  max-width: 50%;
-  height: auto;
-}
-
-textarea {
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #daebf0;
-  width: 250px;
-  padding: 10px;
-  height: 80px;
-  border: none;
-}
-
-#cname,
-#cemail {
-  background-color: #daebf0;
-  border-radius: 5px;
-  width: 250px;
-
-  padding: 10px;
-  margin-top: 5px;
-  border: none;
-}
-
-.separator {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.buttons {
-  margin-top: 10px;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  max-width: 350px;
 }
 
 .contact_icons li {
@@ -431,6 +381,59 @@ textarea {
 .contact_icons li img {
   width: 30px;
   margin-right: 10px;
+}
+
+.is-empty {
+  background-color: #ffcccc; /* Light red to indicate empty */
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+#name,#formemail, textarea {
+  background-color: #dae7f0;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+textarea {
+  display: inline-block;
+  width: 250px;
+  padding: 10px;
+  height: 80px;
+}
+
+/* BUTTONS ON FEEDBACK FORM */
+
+.submitButton {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons{
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin:5px;
+}
+
+.submitButton, #viewFrom {
+  background-color: #bfb4fd;
+  margin:5px;
+}
+
+.submitButton:hover, #viewFrom:hover {
+  transition: transform .3s ease-in-out;
+  transform: scale(1.05);
+  background-color: #a295ec;
 }
 
 /* FOOTER ------------------------------------- */

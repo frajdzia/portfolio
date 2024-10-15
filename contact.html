@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>LS Contact</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <title>LS Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body data-theme="light">
-    <nav>
-        <p id="name">Lidia Soltys</p>
-        <ul>
-            <li><a href="index.html" id="home">Home</a></li>
-            <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
-            <li><a href="projects.html" id="projects">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <body data-theme="light">
+        <nav>
+            <p id="navname">Lidia Soltys</p>
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="projects.html" id="projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main>
+        <main>
 
-        <div class="welcome">
-            <div class="parallax" style="background-image: url('./assets/portfolio_pictures/india/india\ \(49\).JPG');"></div>
-            <div class="welcometext" style="color:black;">
-                <h1>Let's connect</h1>
-                <p>I'm here to answer any questions you may have. I look forward to hearing from you!</p>
-            <ul class="contact_icons">
+            <div class="welcome">
+                <div class="parallax"
+                    style="background-image: url('./assets/portfolio_pictures/spain/spain\ \(13\).JPG');"></div>
+                <div class="welcometext" style="color:black;">
+                    <h1>Let's connect</h1>
+                    <p>I'm here to answer any questions you may have. I look
+                        forward to hearing from you!</p>
+
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"
+                            placeholder="Enter your name">
+                        <br>
+                        <label for="email">Email address:</label>
+                        <input type="email" id="formemail" name="email"
+                            placeholder="Enter your email">
+
+                        <fieldset>
+                            <legend class="questions">Would you like to register
+                                to the newsletter?</legend>
+                            <label><input type="radio" name="newsletter"
+                                    value="yes" id="yesnews"> Yes</label>
+                            <label><input type="radio" name="newsletter"
+                                    value="no" id="nonews"> No</label>
+                        </fieldset>
+
+                        <label for="suggestions">Ask the question:</label><br>
+                        <textarea id="suggestions" name="suggestions"
+                            placeholder="Add your message here..."></textarea>
+
+                        <button class="submitButton" type="submit"
+                            value="submit">Submit Form</button>
+                    </form>
+
+                    <!-- alert about the success of sending the form -->
+                    <div class="alert alert-success" style="display: none;">
+                        <h3>Thank you!</h3>
+                        <p>We're grateful for your feedback! Your time and
+                            insights are immensely appreciated and will play a
+                            significant role in enhancing website.</p>
+                        <p><a href="./index.html">Go back to home page</a></p>
+                    </div>
+                    <!-- <ul class="contact_icons">
                 <li><a href="mailto:04s.lidia@gmail.com" id="email"><img src="email.png" alt="Email"
                     target="_blank"></a>04s.lidia@gmail.com</li>
         <li><a href="https://github.com/frajdzia" id="github" target="_blank"><img src="github.png"
                     alt="GitHub"></a>/frajdzia</li>
         <li><a href="https://www.linkedin.com/in/lidiasoltys/" id="linkedin" target="_blank"><img
                     src="linkedin.png" alt="LinkedIn"></a>/lidiasoltys</li>
-            </ul>
-            </div>
-        </div>
-
-        <!-- <div class="contact-container">
-            <form>
-                <fieldset>
-                    <label for="cname">Name *</label><br>
-                    <input type="text" id="cname" name="firstname" placeholder="Enter your name">
-                    <span class="separator"></span>
-                    <label for="cemail">Email address *</label><br>
-                    <input type="email" id="cemail" name="cemail" placeholder="Enter your email">
-                    <span class="separator"></span>
-                    <label for="suggestions">Message *</label><br>
-                    <textarea id="suggestions" name="suggestions" placeholder="Add your message here..."></textarea>
-                    <span class="separator"></span>
-                    <button class="buttons" id="submit">Submit</button>
-                </fieldset>
-            </form>
-
-        <div class="piconside">
-            <img src="/assets/home_page/background1.JPG" class="piconside">
-        </div>
-    </div> -->
-
-
-    </main>
-
-
-    <footer>
-        <ul>
-            <div class="left">
-                <li></li>
-                <li>04s.lidia@gmail.com</li>
-                <li>London, UK</li>
-            </div>
-            <div>
-                <li>Useful links:</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </div>
-            <div>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </div>
-            <div class="right">
-                <li>Social media:</li>
-                <div id="social_media">
-                    <li><a href="mailto:04s.lidia@gmail.com" id="email"><img src="email.png" alt="Email"
-                                target="_blank"></a></li>
-                    <li><a href="https://github.com/frajdzia" id="github" target="_blank"><img src="github.png"
-                                alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/lidiasoltys/" id="linkedin" target="_blank"><img
-                                src="linkedin.png" alt="LinkedIn"></a></li>
+            </ul> -->
                 </div>
             </div>
-        </ul>
-        <p>2024 © by Lidia Soltys, All rights reserved</p>
-    </footer>
 
-    <script src="index.js"></script>
+        </main>
 
-</body>
+        <footer>
+            <ul>
+                <div class="left">
+                    <li></li>
+                    <li>04s.lidia@gmail.com</li>
+                    <li>London, UK</li>
+                </div>
+                <div>
+                    <li>Useful links:</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </div>
+                <div>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+                <div class="right">
+                    <li>Social media:</li>
+                    <div id="social_media">
+                        <li><a href="mailto:04s.lidia@gmail.com" id="email"><img
+                                    src="email.png" alt="Email"
+                                    target="_blank"></a></li>
+                        <li><a href="https://github.com/frajdzia" id="github"
+                                target="_blank"><img src="github.png"
+                                    alt="GitHub"></a></li>
+                        <li><a href="https://www.linkedin.com/in/lidiasoltys/"
+                                id="linkedin" target="_blank"><img
+                                    src="linkedin.png" alt="LinkedIn"></a></li>
+                    </div>
+                </div>
+            </ul>
+            <p>2024 © by Lidia Soltys, All rights reserved</p>
+        </footer>
+
+        <script src="index.js"></script>
+
+    </body>
 
 </html>
