@@ -33,8 +33,8 @@ nav {
 #navname {
   float: left;
   margin-left: 25px;
-  position: relative;
-  display: inline;
+  display:flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -48,7 +48,6 @@ nav ul li {
   position: relative;
   display: inline-block;
   font-size: 18px;
-  text-align: center;
   margin-left: 10px;
 }
 
@@ -60,24 +59,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #1e0b79;
-}
-
-/* COLOR THEMES ---------------------- */
-
-:root[data-theme="light"] {
-  --text: #021818;
-  --background: #ebfeff;
-  --primary: #24ebe7;
-  --secondary: #9886f4;
-  --accent: #a152ef;
-}
-
-:root[data-theme="dark"] {
-  --text: #e7fdfd;
-  --background: #001314;
-  --primary: #14dbd8;
-  --secondary: #1e0b79;
-  --accent: #5e10ad;
 }
 
 /* FONTS --------------------------- */
@@ -366,32 +347,12 @@ p {
 
 /* CONTACT FORM ------------------------------------ */
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  /* Center items horizontally */
-  align-items: center;
-  /* Center items vertically */
-}
-
 form {
   flex: 1;
   border: none;
-  align-items: left;
-  text-align: left;
-  position: relative;
-  max-width: 350px;
-}
-
-.contact_icons li {
-  display: flex;
   align-items: center;
-  margin: 5px;
-}
-
-.contact_icons li img {
-  width: 30px;
-  margin-right: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .is-empty {
@@ -436,12 +397,12 @@ textarea {
   margin:5px;
 }
 
-.submitButton, #viewFrom {
+.submitButton{
   background-color: #bfb4fd;
   margin:5px;
 }
 
-.submitButton:hover, #viewFrom:hover {
+.submitButton:hover{
   transition: transform .3s ease-in-out;
   transform: scale(1.05);
   background-color: #a295ec;
@@ -475,23 +436,10 @@ footer ul {
   width: 100%;
 }
 
-.left {
-  box-shadow: 0.5px 0 0 #000;
-  margin: 5px;
-}
-
-.right {
-  box-shadow: -0.5px 0 0 #000;
-}
-
 footer a:link,
 footer a:visited {
   color: #6e8892;
   text-decoration: none;
-}
-
-footer ul li img {
-  width: 25px;
 }
 
 #social_media {
@@ -505,7 +453,6 @@ footer ul li a:hover img,
 }
 
 footer ul li {
-  margin: 20px 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,7 +460,6 @@ footer ul li {
 }
 
 footer a img {
-  vertical-align: middle;
   height: 25px;
   width: auto;
 }
@@ -524,7 +470,7 @@ footer p {
 }
 
 footer div {
-  margin: 20px;
+  margin: 15px;
 }
 
 /* GALLERY --------------------------------- */
