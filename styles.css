@@ -551,10 +551,16 @@ footer div {
 }
 
 .gallery {
-  column-gap: 0;
+  column-gap: 5;
 }
 
 @media (min-width: 480px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 800px) {
   .gallery {
     column-count: 2;
   }
