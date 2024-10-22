@@ -196,9 +196,8 @@ p {
 }
 
 .projects{
-  top: auto;
-  left: auto;
-  position:fixed;
+  display: inline-block;
+  flex-wrap:wrap;
   max-width: 30%;
   margin-bottom: 10px;
   padding-bottom: 10px;
