@@ -144,14 +144,10 @@ p {
 
   nav a {
     flex-basis: 50%;
-    text-align: center;
-    border-bottom: 3px solid rgba(194, 194, 194, 0.9);
-    margin-left: 0px;
   }
 
   nav a:hover {
     border-bottom: 3px solid rgb(0, 100, 245);
-    border-top: 3px solid rgba(30, 100, 245, 0.2);
   }
 
   .parallax {
@@ -552,6 +548,7 @@ footer div {
 
 .gallery {
   column-gap: 5;
+  row-gap: 5;
 }
 
 @media (min-width: 480px) {
