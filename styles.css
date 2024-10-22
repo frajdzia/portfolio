@@ -346,7 +346,7 @@ p {
 /* PROJECTS PAGE --------------------------------*/
 
 .text_containter {
-  margin: 50px;
+  margin: 50px, auto;
 }
 
 /* CONTACT FORM ------------------------------------ */
