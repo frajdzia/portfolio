@@ -1,7 +1,19 @@
-// document.querySelector('header').addEventListener('click', function () {
-//     const currentTheme = document.body.getAttribute('data-theme');
-//     document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav ul li a");
+    const navbar = document.querySelector("nav");
+
+//sets the active page to be underlined (underline works with css)
+const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('nav a');
+    const menuLength = menuItem.length;
+
+    for (let i = 0; i < menuLength; i++) {
+        if(menuItem[i].href === currentLocation) {
+            menuItem[i].className = "active";
+        }
+    }
+})
+
 window.addEventListener('scroll', function () {
     var parallaxElements = document.querySelectorAll('.parallax');
     parallaxElements.forEach(function (element) {

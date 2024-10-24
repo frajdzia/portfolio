@@ -51,14 +51,20 @@ nav ul li {
   margin-left: 10px;
 }
 
-nav ul li a {
+nav ul li a, nav ul li a:visited{
   text-decoration: none;
   padding: 5px 10px;
-  border-radius: 20px;
+color:#8937d5;
+}
+
+nav ul li a.active{
+  color: #5315a5;
+  border-bottom: 3px solid #5315a5;
 }
 
 nav ul li a:hover {
-  color: #1e0b79;
+  color: rgb(30, 100, 245);
+  border-bottom: 3px solid rgb(30, 100, 245);
 }
 
 /* FONTS --------------------------- */
@@ -126,36 +132,19 @@ p {
 }
 
 /* Responsive Design */
+@media (max-width: 580px) {
+  #navname{
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    box-shadow: none;
-    padding: 0px;
-  }
-
-  nav {
-    display: flex;
-    width: 100%;
-  }
-
-  nav a {
-    flex-basis: 50%;
-    text-align: center;
-    border-bottom: 3px solid rgba(194, 194, 194, 0.9);
-    margin-left: 0px;
-  }
-
-  nav a:hover {
-    border-bottom: 3px solid rgb(0, 100, 245);
-    border-top: 3px solid rgba(30, 100, 245, 0.2);
-  }
-
   .parallax {
     background-attachment: scroll;
   }
 
-  .welcometext {
-    position: sticky;
+  .welcometext{
+    left:auto;
   }
 }
 
@@ -537,9 +526,16 @@ footer div {
 
 .gallery {
   column-gap: 0;
+  /* gap: 10px; */
 }
 
 @media (min-width: 480px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
   .gallery {
     column-count: 2;
   }
