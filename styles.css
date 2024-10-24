@@ -10,6 +10,10 @@ body {
   background-color: #edfcff;
 }
 
+time {
+  font-weight: bold;
+}
+
 nav {
   position: fixed;
   min-height: 0;
@@ -139,6 +143,28 @@ p {
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+  header {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0px;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+  }
+
+  nav a {
+    flex-basis: 50%;
+  }
+
+  nav a:hover {
+    border-bottom: 3px solid rgb(0, 100, 245);
+  }
+
+>>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
   .parallax {
     background-attachment: scroll;
   }
@@ -178,6 +204,19 @@ p {
   margin-bottom: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.projects{
+  justify-content:space-between;
+  display: inline-block;
+  position: relative;
+  flex-wrap:wrap;
+  max-width: 30%;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  background-color: #f8feff;
 }
 
 /* TECH SKILLS PROGRESS BAR */
@@ -312,27 +351,25 @@ p {
 }
 
 .projectbuttons button{
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  text-align: center;
   background-color: white;
   color: black;
-  border: 2px solid #cdacff; /* Green */
+  border: 2px solid #cdacff;
 }
 
 .projectbuttons button:hover{
-  background-color: #cdacff; /* Green */
+  background-color: #cdacff;
   color: white;
 }
-/* PORTFOLIO PAGE ------------------------------------*/
 
-#portfolio_name {
-  text-align: center;
-}
+/* PORTFOLIO PAGE ------------------------------------*/
+#portfolio_name {  text-align: center;}
 
 /* PROJECTS PAGE --------------------------------*/
 
-.text_containter {
-  margin: 50px;
-}
+.text_containter {  margin: 50px, auto;}
 
 /* CONTACT FORM ------------------------------------ */
 
@@ -525,8 +562,13 @@ footer div {
 }
 
 .gallery {
+<<<<<<< HEAD
   column-gap: 0;
   /* gap: 10px; */
+=======
+  column-gap: 5;
+  row-gap: 5;
+>>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
 }
 
 @media (min-width: 480px) {
@@ -535,7 +577,11 @@ footer div {
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
+=======
+@media (min-width: 800px) {
+>>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
   .gallery {
     column-count: 2;
   }
