@@ -143,28 +143,6 @@ p {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
-=======
-  header {
-    flex-direction: column;
-    box-shadow: none;
-    padding: 0px;
-  }
-
-  nav {
-    display: flex;
-    width: 100%;
-  }
-
-  nav a {
-    flex-basis: 50%;
-  }
-
-  nav a:hover {
-    border-bottom: 3px solid rgb(0, 100, 245);
-  }
-
->>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
   .parallax {
     background-attachment: scroll;
   }
@@ -562,13 +540,8 @@ footer div {
 }
 
 .gallery {
-<<<<<<< HEAD
   column-gap: 0;
   /* gap: 10px; */
-=======
-  column-gap: 5;
-  row-gap: 5;
->>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
 }
 
 @media (min-width: 480px) {
@@ -577,11 +550,7 @@ footer div {
   }
 }
 
-<<<<<<< HEAD
 @media (min-width: 768px) {
-=======
-@media (min-width: 800px) {
->>>>>>> e433c8f4b2d5af8d0a59d7c926e6932531bc81d9
   .gallery {
     column-count: 2;
   }
