@@ -184,19 +184,6 @@ p {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-.projects{
-  justify-content:space-between;
-  display: inline-block;
-  position: relative;
-  flex-wrap:wrap;
-  max-width: 30%;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
-  border-radius: 10px;
-  background-color: #f8feff;
-}
-
 /* WORK EXPERIENCE PICTURES ------------------ */
 
 .content_container {
@@ -268,6 +255,23 @@ p {
 }
 
 /* BUTTONS ----------------- */
+#projectbox{
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  margin:20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+#text{
+  width: 0;
+  max-width: inherit;
+}
+
 .fullbtn a:link,
 .fullbtn a:visited {
   background-color: white;
@@ -328,10 +332,6 @@ p {
 
 /* PORTFOLIO PAGE ------------------------------------*/
 #portfolio_name {  text-align: center;}
-
-/* PROJECTS PAGE --------------------------------*/
-
-.text_containter {  margin: 50px, auto;}
 
 /* CONTACT FORM ------------------------------------ */
 
