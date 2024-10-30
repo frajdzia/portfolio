@@ -197,19 +197,6 @@ p {
   background-color: #f8feff;
 }
 
-/* TECH SKILLS PROGRESS BAR */
-.darkgrey{
-  color: #fff !important;
-  background-color: #8937d5 !important;
-  border-radius: 15px;
-  text-align: center;
-}
-.grey{
-  color: #000;
-  background-color: #c1c1c1;
-  border-radius: 15px;
-}
-
 /* WORK EXPERIENCE PICTURES ------------------ */
 
 .content_container {
@@ -281,27 +268,24 @@ p {
 }
 
 /* BUTTONS ----------------- */
-#get_in_touch a:link,
-#get_in_touch a:visited {
-  padding: 10px 20px;
-}
-
 .fullbtn a:link,
 .fullbtn a:visited {
   background-color: white;
   color: #72aaef;
   border: 2px solid #72aaef;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   float: none;
-  cursor: pointer;
+  cursor: pointer;transition: opacity 0.5s ease;
 }
 
 .fullbtn img {
   width: auto;
   height: 200px;
   display: block;
+  border-top-left-radius:8px; border-top-right-radius:8px;
 }
 
 .fullbtn a:link img,
@@ -318,7 +302,7 @@ p {
 .fullbtn a:hover,
 .fullbtn a:active {
   background-color: #72aaef;
-  color: white;
+  color: white;transition: opacity 0.5s ease;
 }
 
 #profile_pic img {
