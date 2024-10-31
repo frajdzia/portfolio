@@ -196,15 +196,13 @@ p {
   text-align: center;
   padding:15px;
   background-color: rgba(122, 29, 199, 0.4);
-  /* transition: opacity 0.5s ease; */
-  transition: width 2s;
+  transition-duration: 0.3s;
   border-radius: 10px;
   border: 2px solid rgba(122, 29, 199, 1)
 }
 
 #work_experience:hover{
-opacity:1;
-width:150%;
+  background-color: rgba(122, 29, 199, 1);
 }
 
 .content_item:hover {
