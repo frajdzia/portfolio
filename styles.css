@@ -2,17 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:700|Roboto:400");
 
 body {
-  margin: 50px;
-  margin-left: 30px auto;
-  margin-bottom: 0;
   font-family: "Roboto";
-  font-weight: 400;
   background-color: #edfcff;
+    /* for footer not having margin */
+    margin: 0;
+    padding: 0;
 }
 
-time {
-  font-weight: bold;
-}
+time {font-weight: bold;}
 
 nav {
   position: fixed;
@@ -80,43 +77,27 @@ h4,
 h5 {
   font-family: "Suranna";
   font-weight: 700;
-  margin-left: 10px;
+  margin-bottom: 0.5rem;
 }
-
-html {
-  font-size: 100%;
-}
-
-/* 16px */
 
 h1 {
-  font-size: 4.21rem;
-  /* 67.36px */
+  font-size: 4.2rem;
 }
 
 h2 {
   font-size: 3rem;
-  /* 50.56px */
 }
 
 h3 {
   font-size: 2rem;
-  /* 37.92px */
 }
 
 h4 {
-  font-size: 1.777rem;
-  /* 28.48px */
+  font-size: 1.8rem;
 }
 
 h5 {
-  font-size: 1.333rem;
-  /* 21.28px */
-}
-
-small {
-  font-size: 0.75rem;
-  /* 12px */
+  font-size: 1.4rem;
 }
 
 p {
@@ -143,11 +124,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-
-  .welcometext{
+    .welcometext{
     left:auto;
   }
 }
@@ -163,7 +140,8 @@ p {
   color: black;
   box-shadow: 0px 0px 15px rgba(93, 0, 255, 0.5);
   max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
   padding: 30px;
   border-radius: 15px;
   margin: 30px auto;
@@ -200,14 +178,6 @@ p {
   list-style-type: none;
 }
 
-.content_list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .content_item {
   display: inline-block;
   position: relative;
@@ -221,25 +191,24 @@ p {
   width: 90%;
 }
 
-.content_middle {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#work_experience {
+  opacity:1;
   text-align: center;
-  background-color: rgba(122, 29, 199, 1);
-  padding: 10px;
-  transition: opacity 0.5s ease;
+  padding:15px;
+  background-color: rgba(122, 29, 199, 0.4);
+  /* transition: opacity 0.5s ease; */
+  transition: width 2s;
   border-radius: 10px;
+  border: 2px solid rgba(122, 29, 199, 1)
+}
+
+#work_experience:hover{
+opacity:1;
+width:150%;
 }
 
 .content_item:hover {
   opacity: 0.7;
-}
-
-.content_middle:hover {
-  opacity: 1;
 }
 
 .content_text {
@@ -309,25 +278,22 @@ p {
   color: white;transition: opacity 0.5s ease;
 }
 
-#profile_pic img {
-  float: right;
-  margin-left: 20px;
-  max-width: 40%;
-  height: auto;
-}
-
 .projectbuttons button{
   transition-duration: 0.3s;
-  text-decoration: none;
   text-align: center;
   background-color: white;
-  color: black;
   border: 2px solid #cdacff;
+  border-radius: 5px;
+  padding:10px;
+  margin:5px;
 }
+
+.projectbuttons button a{  text-decoration: none;  color: black;}
 
 .projectbuttons button:hover{
   background-color: #cdacff;
   color: white;
+  cursor: pointer;
 }
 
 /* PORTFOLIO PAGE ------------------------------------*/
@@ -397,14 +363,6 @@ textarea {
 }
 
 /* FOOTER ------------------------------------- */
-
-html,
-body {
-  /* for footer not having margin */
-  margin: 0;
-  padding: 0;
-}
-
 footer {
   background-color: #d3f8ff;
   width: 100%;
