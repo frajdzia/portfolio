@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-time {font-weight: bold;}
+time {font-weight: bold;font-size:1rem;}
 
 .side_margins{
   margin: 5px auto;
@@ -144,6 +144,7 @@ p {  margin: 10px;}
 
 #work_experience {
   text-align: center;
+  font-size:1.2rem;
   padding:15px;
   background-color: rgba(122, 29, 199, 0.4);
   transition-duration: 0.3s;
