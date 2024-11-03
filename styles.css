@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Suranna:700|Suranna:400");
-@import url("https://fonts.googleapis.com/css?family=Roboto:700|Roboto:400");
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Suranna:400|Suranna:700|Roboto:400|Roboto:700");
 
+/* GLOBAL STYLING */
 body {
   font-family: "Roboto";
   background-color: #edfcff;
@@ -11,51 +12,36 @@ body {
 
 time {font-weight: bold;}
 
+.side_margins{
+  margin: 5px auto;
+  max-width: calc(100% - 5px)
+}
+
+/* NAVIGATION BAR */
 nav {
   position: fixed;
-  min-height: 0;
-  display: inline;
   top: 0;
   left: 0;
   width: 100%;
   text-align: center;
   z-index: 2;
-  overflow: hidden;
-  float: right;
-  transition: padding 0.3s ease;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(104, 170, 255),
-    rgb(234, 129, 255)
-  );
+  background-image: linear-gradient(to bottom right, rgb(104, 170, 255), rgb(234, 129, 255));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#navname {
-  float: left;
-  margin-left: 25px;
-  display:flex;
-  justify-content: center;
 }
 
 nav ul {
   display: flex;
-  float: right;
+  list-style: none;
   justify-content: space-evenly;
-  padding-right: 40px;
 }
 
 nav ul li {
-  position: relative;
-  display: inline-block;
   font-size: 18px;
-  margin-left: 10px;
 }
 
 nav ul li a, nav ul li a:visited{
   text-decoration: none;
-  padding: 5px 10px;
-color:#8937d5;
+  color:#8937d5;
 }
 
 nav ul li a.active{
@@ -70,39 +56,19 @@ nav ul li a:hover {
 
 /* FONTS --------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Suranna";
+h1, h2, h3, h4, h5 {
+  font-family: "Suranna", serif;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-h1 {
-  font-size: 4.2rem;
-}
+h1 { font-size: 4.2rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.4rem; }
 
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.8rem;
-}
-
-h5 {
-  font-size: 1.4rem;
-}
-
-p {
-  margin: 10px;
-}
+p {  margin: 10px;}
 
 /* HOME PAGE ----------------------------------- */
 
@@ -116,25 +82,13 @@ p {
   background-size: cover;
 }
 
-/* Responsive Design */
-@media (max-width: 580px) {
-  #navname{
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-    .welcometext{
-    left:auto;
-  }
-}
-
 .welcome {
   position: relative;
 }
 
 .welcometext {
   position: absolute;
+  text-align: justify;
   top: 50px;
   left: 30px;
   color: black;
@@ -147,11 +101,6 @@ p {
   margin: 30px auto;
 }
 
-.profile {
-  text-align: center;
-  color: black;
-}
-
 #profilebox {
   top: auto;
   left: auto;
@@ -162,11 +111,10 @@ p {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* WORK EXPERIENCE PICTURES ------------------ */
+/* PICTURES AND INTERACTIVE CARDS------------------ */
 
 .content_container {
   overflow-x: auto;
-  white-space: wrap;
 }
 
 .content_container ul {
@@ -179,12 +127,9 @@ p {
 }
 
 .content_item {
-  display: inline-block;
-  position: relative;
   margin: 10px;
-  transition: opacity 0.5s ease;
   max-width: 35%;
-  height: auto;
+  transition: opacity 0.5s ease;
 }
 
 .content_item img {
@@ -192,16 +137,17 @@ p {
 }
 
 #work_experience {
-  opacity:1;
   text-align: center;
   padding:15px;
   background-color: rgba(122, 29, 199, 0.4);
   transition-duration: 0.3s;
   border-radius: 10px;
-  border: 2px solid rgba(122, 29, 199, 1)
+  border: 2px solid rgba(122, 29, 199, 1);
+  transition: background-color 0.3s;
 }
 
 #work_experience:hover{
+  opacity: 1;
   background-color: rgba(122, 29, 199, 1);
 }
 
@@ -209,34 +155,17 @@ p {
   opacity: 0.7;
 }
 
-.content_text {
-  color: white;
-  font-size: 16px;
-  width: 200px;
-}
-
-.top-left {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* BUTTONS ----------------- */
 #projectbox{
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-  margin:20px;
+  margin: 10px auto;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   display: inline-block;
   align-items: center;
   text-align: center;
-}
-
-#projecttext{
-  max-width: 100%;
 }
 
 .fullbtn a:link,
@@ -253,27 +182,21 @@ p {
 }
 
 .fullbtn img {
-  width: auto;
-  height: 200px;
+  width: 100%;
+  height: auto;
   display: block;
   border-top-left-radius:8px; border-top-right-radius:8px;
 }
 
-.fullbtn a:link img,
-.fullbtn img a:visited {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
 .fullbtn a:hover img {
   opacity: 0.7;
-  transition: opacity 0.5s ease;
 }
 
 .fullbtn a:hover,
 .fullbtn a:active {
   background-color: #72aaef;
-  color: white;transition: opacity 0.5s ease;
+  color: white;
+  transition: opacity 0.5s ease;
 }
 
 .projectbuttons button{
@@ -300,15 +223,12 @@ p {
 /* CONTACT FORM ------------------------------------ */
 
 form {
-  flex: 1;
-  border: none;
-  align-items: center;
   text-align: center;
-  position: relative;
+    position: relative;
 }
 
 .is-empty {
-  background-color: #ffcccc; /* Light red to indicate empty */
+  background-color: #ffcccc; /* red to indicate empty */
 }
 
 fieldset {
@@ -333,29 +253,18 @@ textarea {
 /* BUTTONS ON FEEDBACK FORM */
 
 .submitButton {
-  margin-top: 10px;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.buttons{
-  margin-top: 10px;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  margin:5px;
-}
-
-.submitButton{
   background-color: #bfb4fd;
-  margin:5px;
+    border-radius: 5px;
+    margin: 5px;
+    padding:5px;
+    cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
 }
 
 .submitButton:hover{
-  transition: transform .3s ease-in-out;
   transform: scale(1.05);
   background-color: #a295ec;
 }
@@ -384,6 +293,7 @@ footer a:link,
 footer a:visited {
   color: #257493;
   text-decoration: none;
+  margin:0;
 }
 footer a:hover {
   color: #00354a; text-decoration: underline;}
@@ -402,7 +312,7 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 footer a img {
@@ -416,7 +326,9 @@ footer p {
 }
 
 footer div {
-  margin: 15px;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* GALLERY --------------------------------- */
