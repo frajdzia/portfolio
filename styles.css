@@ -305,7 +305,11 @@ textarea {
 }
 
 #contact_form > div{
-  display: grid; grid-template-columns: 2fr 3fr; width: 20rem; margin: 0 auto; text-align: left;
+  display: grid;
+  grid-template-columns: 8rem 12rem;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* ALERT SUCCESS STYLING */
