@@ -30,13 +30,13 @@ window.addEventListener('scroll', function () {
 });
 
 function loadImages(type, count) {
-    // Clear existing images
+    // clear existing images
     thumbBar.innerHTML = '';
 
-    // Base folder or path for images
+    // path for images
     let basePath = "assets/portfolio_pictures/";
 
-    // Choose the pattern based on the type
+    // choose folder
     let filenamePattern;
     if (type === "india") {
         filenamePattern = "india/india ";
@@ -49,15 +49,12 @@ function loadImages(type, count) {
     else if (type === "spain") {
         filenamePattern = "spain/spain ";
     }
-    else if (type === "poland") {
-        filenamePattern = "poland/poland ";
-    }
     else {
         console.error("Invalid type specified");
         return;
     }
 
-    // Load and append images according to the specified count and type
+    // load and append images according to the specified count and type
     for (let i = 1; i <= count; i++) {
         const link = document.createElement('a');
         link.className = 'gallery-link';
@@ -77,10 +74,8 @@ function loadImages(type, count) {
 }
 
 document.getElementById('contact_form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Validations pass, show success message and reset form
-    document.getElementById('contact_form').reset(); // Reset form fields
-    document.querySelector('.alert.alert-success').style.display = 'block';
-    
+    event.preventDefault(); // prevent default form submission
+    // validations pass, show success message and reset form
+    document.getElementById('contact_form').reset(); // reset form fields
+    document.querySelector('.alert.alert-success').style.display = 'block'; 
 });
