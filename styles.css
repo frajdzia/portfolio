@@ -25,7 +25,7 @@ nav {
   width: 100%;
   text-align: center;
   z-index: 2;
-  background-image: linear-gradient(to bottom right, rgb(104, 170, 255), rgb(234, 129, 255));
+  background-image: linear-gradient(to bottom right, rgb(144, 244, 255), rgb(191, 103, 255));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -37,21 +37,6 @@ nav ul {
 
 nav ul li {
   font-size: 18px;
-}
-
-nav ul li a, nav ul li a:visited{
-  text-decoration: none;
-  color:#8937d5;
-}
-
-nav ul li a.active{
-  color: #5315a5;
-  border-bottom: 3px solid #5315a5;
-}
-
-nav ul li a:hover {
-  color: rgb(30, 100, 245);
-  border-bottom: 3px solid rgb(30, 100, 245);
 }
 
 /* FONTS --------------------------- */
@@ -70,20 +55,48 @@ h5 { font-size: 1.4rem; }
 
 p {  margin: 10px;}
 
-a{color:#00354a;}
-a:hover{color:#257493;}
-
 /* Keyframe Animations ------------------------------*/
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .welcometext, .content_item {
   animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Animated link effects */
+a {
+  position: relative;
+  color: #2667c9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Color change and underline on hover */
+a:hover {
+  color: #257493; /* Change link color on hover */
+}
+
+a:not(.no-underline)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #257493; /* Underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:not(.no-underline):hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
 }
 
 /* HOME PAGE ----------------------------------- */
@@ -98,8 +111,7 @@ a:hover{color:#257493;}
 }
 
 .welcome {
-  position: relative;
-}
+  position: relative;}
 
 .welcometext {
   position: absolute;
@@ -167,11 +179,22 @@ a:hover{color:#257493;}
   border-radius: 10px;
   border: 2px solid rgb(99, 15, 167);
   transition: background-color 0.3s;
+  transition: transform .3s ease-in-out;
+}
+
+.work_experience:nth-child(odd){ /* blue background and border for odd items */ 
+  background-color: rgb(176, 204, 244);
+  border: 2px solid rgb(15, 78, 167);
 }
 
 .work_experience:hover{
   opacity: 1;
+  transform: scale(1.05);
   background-color: rgb(177, 105, 236);
+}
+
+.work_experience:hover:nth-child(odd){
+  background-color: rgb(105, 170, 236);
 }
 
 .content_item:hover {
@@ -250,38 +273,28 @@ a:hover{color:#257493;}
   transition: opacity 0.5s ease;
 }
 
-.projectbuttons a{
-  transition-duration: 0.3s;
-  text-align: center;
-  background-color: white;
-  border: 2px solid #cdacff;
-  border-radius: 5px;
-  padding:10px;
-  margin:5px;
-  display: inline-block;
-}
-
-.projectbuttons a{  text-decoration: none;  color: black;}
-
-.projectbuttons a:hover{
-  background-color: #cdacff;
-  color: white;
-  cursor: pointer;
-}
-
 /* PORTFOLIO PAGE ------------------------------------*/
 #portfolio_name {  text-align: center;}
 
 /* CONTACT FORM ------------------------------------ */
 
 form {
+  margin-top:30px;
   text-align: center;
-    position: relative;
+  position: relative;
 }
 
-.is-empty {
-  background-color: #ffcccc; /* red to indicate empty */
-}
+  /* valid input */
+  #contact_form input:valid,
+  #contact_form textarea:valid {
+      border-color: #28a745; /* green for valid */
+  }
+
+  /* invalid input */
+  #contact_form input:invalid,
+  #contact_form textarea:invalid {
+      border-color: #dc3545; /* red for invalid */
+  }
 
 fieldset {
   border: none;
@@ -291,7 +304,7 @@ fieldset {
 #name,#formemail, textarea {
   background-color: #dae7f0;
   border-radius: 5px;
-  border: none;
+  border: 2px solid #257493;
   margin-bottom: 20px;
 }
 
@@ -302,27 +315,42 @@ textarea {
   height: 80px;
 }
 
-/* BUTTONS ON FEEDBACK FORM */
+/* ALERT SUCCESS STYLING */
+.alert {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 10px;
+}
+.alert a{color:#154c57}
 
-.submitButton {
-  background-color: #bfb4fd;
-    border-radius: 5px;
-    margin: 5px;
-    padding:5px;
-    cursor: pointer;
+/* BUTTONS  */
+
+.buttons {
+  background-color: #b4e7fd;
+  color:black;
   border-radius: 5px;
-  border: none;
+  margin: 15px;
+  padding:10px;
+  text-decoration: none;
   cursor: pointer;
+  display: inline-block;
+  border: none;
   transition: transform .3s ease-in-out;
 }
 
-.submitButton:hover{
+.buttons:hover{
   transform: scale(1.05);
-  background-color: #a295ec;
+  background-color: #76c2ee;
+  color:#2667c9;
 }
 
 /* FOOTER ------------------------------------- */
 footer {
+  margin-top: 10px;
   background-color: #d3f8ff;
   width: 100%;
   text-align: center;
@@ -334,6 +362,7 @@ main{margin-bottom: 100px; flex: 1; }
 .footer_list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap; /* allows items to wrap */
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -341,7 +370,6 @@ main{margin-bottom: 100px; flex: 1; }
 }
 
 .footer_list ul{
-  margin-top: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -350,37 +378,37 @@ footer a:link,
 footer a:visited {
   color: #257493;
   text-decoration: none;
-  margin:0;
+  margin-top:2px;
 }
 footer a:hover {
-  color: #00354a; text-decoration: underline;}
+  color: #00354a;}
 
-#social_media {
+.footer_list ul li, #social_media li{
   display: flex;
-}
-
-.footer_list ul li a:hover img{
-  background-color: #8edbec;
-  border-radius: 50%;
-}
-
-.footer_list ul li{
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   margin: 0 5px;
 }
 
-footer a img {
+#social_media {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  padding: 0; /* Remove any default padding */
+}
+#social_media a img {
   height: 25px;
   width: auto;
 }
+#social_media a:hover img{
+  background-color: #8edbec;
+  border-radius: 50%;
+}
 
-footer p {
+.bottom_footer {
   margin: 0;
   background-color: #a9e3f0;
 }
-
 /* GALLERY --------------------------------- */
 
 .gallery-image-caption {
@@ -445,7 +473,6 @@ footer p {
 
 .gallery {
   column-gap: 0;
-  /* gap: 10px; */
 }
 
 @media (min-width: 480px) {

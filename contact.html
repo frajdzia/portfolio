@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body style="background-image: url('./assets/portfolio_pictures/spain/spain\ \(13\).JPG');background-repeat: no-repeat;
+    <body style="background-image: url('./assets/portfolio_pictures/spain/spain\ \(19\).JPG');background-repeat: no-repeat;
     background-size: cover;">
         <nav>
             
@@ -22,19 +22,19 @@
 
         <main>
                 
-                <div class="welcometext" id="profilebox" style="justify-content:center;margin-top:70px;">
-                    <h2>Let's connect</h2>
+                <div class="welcometext" id="profilebox" style="margin-top:70px;text-align:center;">
+                    <h2>Let's connect!</h2>
                     <p>I'm here to answer any questions you may have. I look
                         forward to hearing from you!</p>
 
                     <form id="contact_form">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name"
-                            placeholder="Enter your name">
+                            placeholder="Enter your name" required>
                         <br>
                         <label for="email">Email address:</label>
                         <input type="email" id="formemail" name="email"
-                            placeholder="Enter your email">
+                            placeholder="Enter your email" required>
 
                         <fieldset>
                             <label class="newsletter">Would you like to register
@@ -47,9 +47,9 @@
 
                         <label for="question">Ask the question:</label><br>
                         <textarea id="question" name="question"
-                            placeholder="Add your message here..."></textarea>
+                            placeholder="Add your message here..." required></textarea>
                         <br>
-                        <button class="submitButton" type="submit"
+                        <button class="buttons" type="submit"
                             value="submit">Submit Form</button>
                     </form>
 
@@ -67,34 +67,26 @@
         </main>
 
         <footer>
-            <ul>
-                <div>                    
-                    <li>04s.lidia@gmail.com</li>
-                    <li>London, UK</li>
-                </div>
-                <div>
-                    <li>Useful links:</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </div>
-                <div>
-                    <li>Social media:</li>
-                    <div id="social_media">
-                        <li><a href="mailto:04s.lidia@gmail.com" id="email"><img
-                                    src="./assets/icons/email.png" alt="Email"
-                                    target="_blank"></a></li>
-                        <li><a href="https://github.com/frajdzia" id="github"
-                                target="_blank"><img src="./assets/icons/github.png"
-                                    alt="GitHub"></a></li>
-                        <li><a href="https://www.linkedin.com/in/lidiasoltys/"
-                                id="linkedin" target="_blank"><img
-                                    src="./assets/icons/linkedin.png" alt="LinkedIn"></a></li>
-                    </div>
-                </div>
+            <p>Useful links:</p>
+            <ul class="footer_list">
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="portfolio.html">Portfolio Page</a></li>
+                </ul>
+                <ul>
+                    <li><a href="projects.html">Projects Page</a></li>
+                    <li><a href="contact.html">Contact Page</a></li>
+                </ul>
+                <ul>
+                    <ul id="social_media">
+                        <li><a href="mailto:04s.lidia@gmail.com" id="email"><img src="./assets/icons/email.png" alt="Email" target="_blank"></a></li>
+                        <li><a href="https://github.com/frajdzia" id="github" target="_blank"><img src="./assets/icons/github.png" alt="GitHub"></a></li>
+                        <li><a href="https://www.linkedin.com/in/lidiasoltys/" id="linkedin" target="_blank"><img src="./assets/icons/linkedin.png" alt="LinkedIn"></a></li>
+                    </ul>                       
+                </ul>
             </ul>
-            <p>2024 © by Lidia Soltys, All rights reserved</p>
+            <p class="bottom_footer">2024 © by Lidia Soltys, All rights reserved</p>
+                
         </footer>
         <script src="index.js"></script>
     </body>
