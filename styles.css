@@ -137,7 +137,6 @@ a:not(.no-underline):hover::after {
   padding-bottom: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-
 /* PICTURES AND INTERACTIVE CARDS------------------ */
 
 .content_container {
