@@ -75,3 +75,29 @@ function loadImages(type, count) {
         thumbBar.appendChild(link);
     }
 }
+
+document.getElementById('contact_form').addEventListener('submit', function (event) {
+    event.preventDefault(); // validation if tehre is input everywhere
+    
+    // get the input values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('formemail').value.trim();
+    const question = document.getElementById('question').value.trim();
+    
+    // check
+    if (name === '' || email === '' || question === '') {
+        alert('Please fill in all fields before submitting.');
+        return;
+    }
+
+    // check email
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // validations pass, show success message and reset form
+    document.querySelector('.alert.alert-success').style.display = 'block';
+    document.getElementById('contact_form').reset(); // reset form fields
+});
