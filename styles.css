@@ -309,7 +309,8 @@ textarea {
 
 #contact_form > div{
   display: grid;
-  grid-template-columns: 8rem 12rem;
+  grid-template-columns: 8rem 10rem;
+  width: 20rem;
   margin: 0 auto;
   text-align: left;
 }
